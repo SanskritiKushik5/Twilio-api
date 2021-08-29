@@ -14,13 +14,13 @@ app.get("/", (req, res) => {
 });
 
 app.post("/whatsapp", (req, res) => {
-    const mobile = req.body.mobile;
+    const msg = req.body.msg;
     const client = require("twilio")(process.env.accountSid, process.env.authToken);
     client.messages 
       .create({ 
-         body: 'Hello👋! This is Sanskriti 😎... Let\'s catch up someday?', 
+         body: msg, 
          from: 'whatsapp:+14155238886',       
-         to: `whatsapp:${mobile}`
+         to: 'whatsapp:+917977463576'
        }) 
       .then(message => {
         console.log(message.sid);

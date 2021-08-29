@@ -10,29 +10,20 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Twilio</a>
+          <a class="navbar-brand" href="/">Twilio WhatsApp API</a>
         </div>
       </nav>
     <div class="container">
         <div class="row text-center mt-5">
             <div class="col-xs-12 mt-5">
-                <h3>WhatsApp</h3>
+                <h3>Send me a WhatsApp message now!</h3>
                 <form action="/whatsapp" method="POST">
                     <div class="form-group">
-                        <input type="text" name="mobile" class="form-control mt-4" placeholder="Mobile Number (with country code)" id="inputDefault">
-                        <button type="submit" class="btn btn-outline-secondary mt-3">Submit</button>
+                        <input type="text" name="msg" class="form-control mt-4" placeholder="Enter your message" id="inputDefault">
+                        <button type="submit" class="btn btn-outline-secondary mt-3">Send Now 😃</button>
                     </div>
                 </form>
             </div>
-            <!-- <div class="col-md-6 col-xs-12 mt-5">
-                <h3>SMS</h3>
-                <form action="/sms" method="POST">
-                    <div class="form-group">
-                        <input type="text" class="form-control mt-4" placeholder="Mobile Number (with country code)" id="inputDefault">
-                        <button type="submit" class="btn btn-outline-secondary mt-3">Submit</button>
-                    </div>
-                </form>
-            </div> -->
         </div>
     </div>
 </body>
