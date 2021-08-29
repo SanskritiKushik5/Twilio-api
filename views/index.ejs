@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilio</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Twilio</a>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row text-center mt-5">
+            <div class="col-md-6 col-xs-12 mt-5">
+                <h3>WhatsApp</h3>
+                <form action="/whatsapp" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control mt-4" placeholder="Mobile Number (with country code)" id="inputDefault">
+                        <button type="submit" class="btn btn-outline-secondary mt-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-xs-12 mt-5">
+                <h3>SMS</h3>
+                <form action="/sms" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control mt-4" placeholder="Mobile Number (with country code)" id="inputDefault">
+                        <button type="submit" class="btn btn-outline-secondary mt-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
